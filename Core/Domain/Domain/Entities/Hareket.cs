@@ -25,11 +25,8 @@ namespace Domain.Entities
         public int? CariId { get; set; }
         public Cari? Cari { get; set; }
 
-
         public int? DepoId { get; set; }
         public Depo? Depo { get; set; }
-
-
 
         public int StokId { get; set; }
         public Stok Stok { get; set; }
