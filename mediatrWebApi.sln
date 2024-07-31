@@ -9,15 +9,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{2C72C949-44E6-4288-85C1-1228AE9DEEC0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Core\Domain\Domain\Domain.csproj", "{83B0F591-5587-42AC-99AA-FE1C8DB5A843}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Core\Domain\Domain\Domain.csproj", "{83B0F591-5587-42AC-99AA-FE1C8DB5A843}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "..\..\..\..\recai\source\repos\mediatrWebApi\Core\Application\Application\Application.csproj", "{394520D5-D5FA-4F23-BB36-04F2F27A4BF2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "..\..\..\..\recai\source\repos\mediatrWebApi\Core\Application\Application\Application.csproj", "{394520D5-D5FA-4F23-BB36-04F2F27A4BF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "..\..\..\..\recai\source\repos\mediatrWebApi\Infrastructure\Infrastructure\Infrastructure\Infrastructure.csproj", "{07DC8C78-E8B6-455A-B19D-6D513D05D5F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "..\..\..\..\recai\source\repos\mediatrWebApi\Infrastructure\Infrastructure\Infrastructure\Infrastructure.csproj", "{07DC8C78-E8B6-455A-B19D-6D513D05D5F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "..\..\..\..\recai\source\repos\mediatrWebApi\Infrastructure\Persistence\Persistence\Persistence.csproj", "{6B7F43B7-3E1E-4143-BF99-30113CAEFED4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persistence", "..\..\..\..\recai\source\repos\mediatrWebApi\Infrastructure\Persistence\Persistence\Persistence.csproj", "{6B7F43B7-3E1E-4143-BF99-30113CAEFED4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csproj", "{7E435A02-B8BE-4C2F-84D4-060C6580566A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi", "WebApi\WebApi.csproj", "{7E435A02-B8BE-4C2F-84D4-060C6580566A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{07DC8C78-E8B6-455A-B19D-6D513D05D5F1} = {07DC8C78-E8B6-455A-B19D-6D513D05D5F1}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

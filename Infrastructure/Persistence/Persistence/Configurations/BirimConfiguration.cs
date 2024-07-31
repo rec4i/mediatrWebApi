@@ -25,9 +25,9 @@ namespace Persistence.Configurations
             {
                 new Birim{Id = 1 , KısaAdı = "Ad",UzunAdı="Adet",IsDeleted=false,CreatedDate=DateTime.Now},
                 new Birim{Id = 2 , KısaAdı = "Lt",UzunAdı="Litre",IsDeleted=false,CreatedDate = DateTime.Now},
-                new Birim{Id = 2 , KısaAdı = "Gr",UzunAdı="Gram",IsDeleted=false,CreatedDate = DateTime.Now},
-                new Birim{Id = 2 , KısaAdı = "Kg",UzunAdı="Kilogram",IsDeleted=false,CreatedDate = DateTime.Now},
-                new Birim{Id = 2 , KısaAdı = "M",UzunAdı="Metre",IsDeleted=false,CreatedDate = DateTime.Now},
+                new Birim{Id = 3 , KısaAdı = "Gr",UzunAdı="Gram",IsDeleted=false,CreatedDate = DateTime.Now},
+                new Birim{Id = 4 , KısaAdı = "Kg",UzunAdı="Kilogram",IsDeleted=false,CreatedDate = DateTime.Now},
+                new Birim{Id = 5 , KısaAdı = "M",UzunAdı="Metre",IsDeleted=false,CreatedDate = DateTime.Now},
             };
             builder.HasData(birimler);
         }
