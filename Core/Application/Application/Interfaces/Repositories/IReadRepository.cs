@@ -48,11 +48,11 @@ namespace Application.Interfaces.Repositories
         /// </summary>
         /// <param name="currentPage">
         /// Getirilecek verinin hangi sayfada olduğunu belirten parametre. Sayfalama için başlangıç sayfasını belirtir.
-        /// Varsayılan olarak 1. sayfa döndürülür.
+        /// Varsayılan olarak 1. sayfa döner.
         /// </param>
         /// <param name="pageSize">
         /// Her sayfada kaç kayıt olacağını belirten parametre. Sayfalama sırasında bir sayfada gösterilecek kayıt sayısını tanımlar.
-        /// Varsayılan değer 3'tür.
+        /// Varsayılan değer 10'dur.
         /// </param>
         /// <returns>
         /// Sayfalama uygulanmış, belirtilen kriterlere göre filtrelenmiş, sıralanmış ve ilişkili verileri
@@ -62,7 +62,7 @@ namespace Application.Interfaces.Repositories
         Task<IList<T>> GetAllByPagingAsync(Expression<Func<T, bool>>? predicate = null,
             Func<IQueryable<T>, IIncludableQueryable<T, object>>? include = null,
             Func<IQueryable<T>, IOrderedQueryable<T>>? orderBy = null,
-            bool enableTracking = false, int currentPage = 1, int pageSize = 3);
+            bool enableTracking = false, int currentPage = 1, int pageSize = 10);
 
         /// <summary>
         /// Eğer tek bir entity istiyorsak bu metodu kullanabiliriz
